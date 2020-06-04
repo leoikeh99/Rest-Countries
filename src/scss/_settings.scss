@@ -1,0 +1,31 @@
+$primary: hsl(200, 15%, 8%);
+$Dark-Gray: hsl(0, 0%, 52%);
+$BG-Color: hsl(0, 0%, 98%);
+$Secondary: hsl(0, 0%, 100%);
+$Shadow1: darken($Secondary, 5);
+$Shadow2: darken($BG-Color, 12);
+$Shadow3: darken($BG-Color, 10);
+$DarkBlue: hsl(209, 23%, 22%);
+$Shadow1Dark: darken($DarkBlue, 5);
+$Shadow3Dark: darken($DarkBlue, 10);
+$VeryDarkBlue: hsl(207, 26%, 17%);
+
+html {
+  --primary: #{$primary};
+  --BG-Color: #{$BG-Color};
+  --Secondary: #{$Secondary};
+  --Shadow1: #{$Shadow1};
+  --Shadow2: #{$Shadow2};
+  --Shadow3: #{$Shadow3};
+  --input: #{$Dark-Gray};
+}
+
+html[theme="dark"] {
+  --primary: #{$BG-Color};
+  --BG-Color: #{$VeryDarkBlue};
+  --Secondary: #{$DarkBlue};
+  --Shadow1: #{$Shadow1Dark};
+  --Shadow2: #{$primary};
+  --Shadow3: #{$Shadow3Dark};
+  --Input: #{$DarkBlue};
+}

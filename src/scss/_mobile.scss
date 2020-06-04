@@ -1,0 +1,94 @@
+@media screen and (max-width: 847px) {
+  .input {
+    width: 50% !important;
+    margin-bottom: 2rem;
+    box-sizing: border-box;
+  }
+  .space {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 654px) {
+  .input {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 593px) {
+  .card {
+    height: 380px !important;
+    .image {
+      height: 50% !important;
+    }
+  }
+
+  .flex {
+    flex-direction: column;
+    align-items: center !important;
+    .card {
+      width: 300px;
+
+      image {
+        height: 50%;
+      }
+
+      &:nth-child(2) {
+        margin-left: 0px !important;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .card {
+    height: 310px !important;
+    .image {
+      height: 50% !important;
+    }
+  }
+
+  .flex {
+    .card {
+      width: 100% !important;
+    }
+  }
+}
+
+@media screen and (max-width: 1019px) {
+  .flex-2 {
+    flex-direction: column;
+    .flag {
+      height: 200px;
+      max-width: 500px;
+      img {
+        height: 100%;
+      }
+    }
+    .lists {
+      flex-direction: column;
+
+      ul {
+        &:nth-child(2) {
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 330px) {
+  nav {
+    .container {
+      padding: 1.5rem 0 !important;
+      h2 {
+        font-size: 0.9rem;
+      }
+    }
+
+    .switcher {
+      font-size: 0.8rem;
+    }
+  }
+}

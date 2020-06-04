@@ -150,8 +150,8 @@ main {
   main form {
     flex-basis: 350px; }
     main form .input {
-      padding: 10px;
-      background: var(--Input);
+      padding: 15px 10px;
+      background: var(--Secondary);
       border-radius: 3px;
       width: 100%;
       box-shadow: 0px 0px 5px var(--Shadow2); }
@@ -160,13 +160,13 @@ main {
         height: 20px;
         border: 0;
         color: var(--primary);
-        background: var(--Input); }
+        background: var(--Secondary); }
       main form .input i {
         color: #858585;
         margin: 0 15px; }
   main .filter .top {
     background: var(--Secondary);
-    padding: 10px;
+    padding: 15px 10px;
     width: 200px;
     box-sizing: border-box;
     border-radius: 3px;

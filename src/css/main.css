@@ -226,7 +226,8 @@ main {
   height: 350px;
   border-radius: 5px;
   color: var(--primary);
-  position: relative; }
+  position: relative;
+  background-color: var(--Secondary); }
   .card .image {
     height: 50%; }
   .card img {

@@ -19,9 +19,7 @@ const CountryItem = ({ name, capital, flag, region, population, code }) => {
           <span className="bold">Capital:</span> {capital}
         </p>
         <div className="more">
-          <Link to={`/more/${code}`}>
-            more<i className="fas fa-arrow-right"></i>
-          </Link>
+          <Link to={`/more/${code}`}>more</Link>
         </div>
       </div>
     </div>

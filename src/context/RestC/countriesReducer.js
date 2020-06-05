@@ -4,6 +4,7 @@ import {
   GET_COUNTRY,
   SET_REGION,
   SET_ERROR,
+  SET_BORDER,
 } from "../types";
 
 export default (state, action) => {
@@ -39,7 +40,11 @@ export default (state, action) => {
         ...state,
         region: action.payload,
       };
-
+    case SET_BORDER:
+      return {
+        ...state,
+        border: action.payload,
+      };
     default:
       return state;
   }

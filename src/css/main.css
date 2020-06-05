@@ -11,7 +11,7 @@ html[theme="dark"] {
   --primary: #fafafa;
   --BG-Color: #202c37;
   --Secondary: #2b3945;
-  --Shadow1: #293642;
+  --Shadow1: #212c35;
   --Shadow2: #111517;
   --Shadow3: #1b242c;
   --Input: #2b3945; }
@@ -120,7 +120,7 @@ a {
 nav {
   font-size: 14px;
   background: var(--Secondary);
-  box-shadow: 0px 4px 7px -2px var(--Shadow3); }
+  box-shadow: 0px 4px 3px -2px var(--Shadow3); }
   nav .container {
     padding: 2rem 0;
     display: flex;
@@ -154,7 +154,7 @@ main {
       background: var(--Secondary);
       border-radius: 3px;
       width: 100%;
-      box-shadow: 0px 0px 5px var(--Shadow2); }
+      box-shadow: 0px 0px 2px var(--Shadow2); }
       main form .input input {
         width: 80%;
         height: 20px;
@@ -169,7 +169,7 @@ main {
     width: 200px;
     box-sizing: border-box;
     border-radius: 3px;
-    box-shadow: 0px 0px 5px var(--Shadow2);
+    box-shadow: 0px 0px 2px var(--Shadow2);
     cursor: pointer; }
     main .filter .top .space2 {
       display: flex;
@@ -192,7 +192,7 @@ main {
       width: 0;
       overflow: hidden;
       border-radius: 3px;
-      box-shadow: 0px 0px 5px var(--Shadow2);
+      box-shadow: 0px 0px 2px var(--Shadow2);
       z-index: 1; }
 
 @keyframes open {
@@ -222,10 +222,11 @@ main {
   grid-gap: 50px; }
 
 .card {
-  box-shadow: 0px 0px 5px var(--Shadow2);
+  box-shadow: 0px 0px 2px var(--Shadow2);
   height: 350px;
   border-radius: 5px;
-  color: var(--primary); }
+  color: var(--primary);
+  position: relative; }
   .card .image {
     height: 50%; }
   .card img {
@@ -248,7 +249,10 @@ main {
       text-align: center;
       border-radius: 5px;
       padding: 2px 10px;
-      display: inline-block; }
+      display: inline-block;
+      position: absolute;
+      bottom: 10px;
+      right: 10px; }
       .card .info .more a {
         color: var(--primary); }
 
@@ -267,7 +271,7 @@ main {
   padding: 3rem 0; }
   .more-2 .link {
     padding: 10px 25px;
-    box-shadow: 0px 0px 5px var(--Shadow2);
+    box-shadow: 0px 0px 2px var(--Shadow2);
     background-color: var(--Secondary);
     margin-bottom: 2rem;
     display: inline-block;
@@ -303,7 +307,7 @@ main {
         margin-bottom: 3px; }
       .more-2 .flex-2 .borders .border {
         padding: 8px 0px;
-        box-shadow: 0px 0px 5px var(--Shadow2);
+        box-shadow: 0px 0px 2px var(--Shadow2);
         border-radius: 3px;
         background-color: var(--Secondary);
         text-align: center;

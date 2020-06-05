@@ -248,7 +248,7 @@ main {
     .card .info .more {
       border: 1px solid var(--primary);
       text-align: center;
-      border-radius: 5px;
+      border-radius: 15px;
       padding: 2px 10px;
       display: inline-block;
       position: absolute;

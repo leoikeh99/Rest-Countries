@@ -1,19 +1,11 @@
 import React, { useEffect, useContext } from "react";
-import $ from "jquery";
 import CountriesContext from "../context/RestC/countriesContext";
 import Spinner from "./layout/Spinner";
 import { Link } from "react-router-dom";
 
 const More = ({ match }) => {
   const countriesContext = useContext(CountriesContext);
-  const {
-    country,
-    loading,
-    getCountry,
-    error,
-    border,
-    setBorder,
-  } = countriesContext;
+  const { country, loading, getCountry, error } = countriesContext;
 
   const {
     name,

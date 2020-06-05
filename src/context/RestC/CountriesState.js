@@ -8,7 +8,6 @@ import {
   SET_REGION,
   GET_COUNTRY,
   SET_ERROR,
-  SET_BORDER,
 } from "../types";
 
 const CountriesState = (props) => {
@@ -18,13 +17,11 @@ const CountriesState = (props) => {
     region: "",
     loading: false,
     error: false,
-    border: "",
   };
 
   const [state, dispatch] = useReducer(countriesReducer, initialState);
   const setLoading = () => dispatch({ type: SET_LOADING });
   const setRegion = (region) => dispatch({ type: SET_REGION, payload: region });
-  const setBorder = (border) => dispatch({ type: SET_BORDER, payload: border });
 
   const getCountries = async (region) => {
     setLoading();
@@ -70,8 +67,6 @@ const CountriesState = (props) => {
         country: state.country,
         region: state.region,
         error: state.error,
-        border: state.border,
-        setBorder,
         getCountries,
         serachCountries,
         setRegion,

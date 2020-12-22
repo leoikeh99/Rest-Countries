@@ -13,7 +13,11 @@ Users will be able to:
 - Filter countries by region
 - Click on a country to see more detailed information on a separate page
 - Click through to the border countries on the detail page
-- Toggle the color scheme between light and dark mode _(optional)_
+- Toggle the color scheme between light and dark mode
+
+### Live demo:
+
+[Rest countries app live](https://rest-countries1000.netlify.app/)
 
 ### Light Mode
 
